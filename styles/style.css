@@ -1,1 +1,205 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 92px;
+  padding-bottom: 96px;
+}
 
+.header-menu {
+
+}
+
+.header-links-list {
+  display: flex;
+  gap: 32px;
+  list-style: circle;
+
+}
+
+.header-links-list-item {
+
+}
+
+.header-links-list-item-no-bullit {
+  list-style: none;
+
+}
+
+.header-link-active {
+  text-decoration: none;
+
+}
+
+.header-link {
+  font-size: 18px;
+  text-underline-position: under;
+}
+
+.header-logo {
+  display: block;
+  width: 148px;
+  height: 105px;
+}
+
+.header-logo-image {
+
+}
+
+.address {
+  font-style: normal;
+  font-size: 18px;
+  max-width: 240px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.address a {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.header-address {
+  justify-self: end;
+}
+
+.cover {
+  background: url(../images/cover.jpg) no-repeat center center / cover;
+}
+
+.cover-title {
+
+}
+
+.aligned-text {
+
+}
+
+.aligned-text-left {
+
+}
+
+.aligned-text-center {
+
+}
+
+.aligned-text-right {
+
+}
+
+.description {
+
+}
+
+.bet-button {
+
+}
+
+.lots {
+  margin: 180px 24px 120px 24px;
+}
+
+.lots-heading {
+
+}
+
+.lots-card-list {
+
+}
+
+.lots-card-list-item {
+
+}
+
+.card-link {
+
+}
+
+.card {
+
+}
+
+.card-type-film {
+  background: url(../images/card-lot-01.jpg) no-repeat center / cover;
+}
+
+.card-type-book {
+  background: url(../images/card-lot-02.jpg) no-repeat center / cover;
+}
+
+.card-type-picture {
+  background: url(../images/card-lot-03.jpg) no-repeat center / cover;
+}
+
+.card-title {
+
+}
+
+.card-text {
+
+}
+
+.lots-look-more-link {
+
+}
+
+.about {
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 180px;
+}
+
+.about-title {
+
+}
+
+.about-text {
+
+}
+
+.about-column {
+
+}
+
+footer {
+
+}
+
+.footer-menu {
+
+}
+
+.footer-menu-list {
+
+}
+
+.footer-menu-list-item {
+
+}
+
+.footer-menu-link {
+
+}
+
+.footer-menu-link-active {
+
+}
+
+.footer-social-list {
+
+}
+
+.footer-social-list-item {
+
+}
+
+.footer-social-link {
+
+}
+
+.footer-social-icon {
+
+}
