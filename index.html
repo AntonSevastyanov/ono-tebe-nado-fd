@@ -40,13 +40,15 @@
       <section class="cover overlay">
         <h1 class="cover-title">
           <!-- класс aligned-text для превращения строк заголовка в блочный элемент -->
-          <span class="aligned-text aligned-text_left">Оно</span>
-          <span class="aligned-text aligned-text_center">Тебе</span>
-          <span class="aligned-text aligned-text_right">Надо</span>
+          <span class="aligned-text aligned-text-left">Оно</span>
+          <span class="aligned-text aligned-text-center">Тебе</span>
+          <span class="aligned-text aligned-text-right">Надо</span>
         </h1>
         <div class="description">
-          <p>Аукцион вещей, в которые никто не верил</p>
-          <button class="bet-button">Сделать ставку</button>
+          <h2 class="description-title">Аукцион вещей, в которые никто не верил</h2>
+          <button class="bet-button">
+            <span class="bet-button-text">Сделать ставку</span>
+          </button>
         </div>
       </section>
 
@@ -93,9 +95,9 @@
 
       <section class="about">
         <div class="about-column">
-          <a class="about-logo">
+          <div class="about-logo">
             <img src="./images/logo-white.svg" alt="Логотип" class="about-logo-image" />
-          </a>
+          </div>
         </div>
         <div class="about-column">
           <h2 class="about-title">Об аукционе</h2>
@@ -113,8 +115,8 @@
 
     <footer class="footer">
       <address class="address">
-        +9 999 555 5555
-        info@sobaka.ge
+        <a href="tel:+999955555555">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         наб. Принсенграхт 263-265, Амстердам
       </address>
       <nav class="footer-menu">

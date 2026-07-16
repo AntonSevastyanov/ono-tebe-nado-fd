@@ -1,3 +1,19 @@
+.overlay {
+  position: relative;
+}
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.overlay > * {
+  position: relative;
+  z-index: 1;
+}
+
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -28,6 +44,7 @@
 
 }
 
+
 .header-link-active {
   text-decoration: none;
 
@@ -42,6 +59,8 @@
   display: block;
   width: 148px;
   height: 105px;
+  transform: translateY(-2px) scaleX(calc(142 / 148)); /*Уменьшим немного логотип, чтобы он совпадал с расширением Perfectpixel.*/
+  transform-origin: center;
 }
 
 .header-logo-image {
@@ -68,58 +87,112 @@
 
 .cover {
   background: url(../images/cover.jpg) no-repeat center center / cover;
+  min-height: 757px;
 }
 
 .cover-title {
-
+  color: #FFF;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+  padding-top: 165px;
 }
 
 .aligned-text {
-
+  display: block;
 }
 
 .aligned-text-left {
-
+  margin-right: 764px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  /* padding-top: 165px; */
 }
 
 .aligned-text-center {
-
+  /* margin-top: 20px; */
+  margin-right: 380px;
+  margin-bottom: 20px;
+  margin-left: 380px;
 }
 
 .aligned-text-right {
-
+  /* margin-bottom: 207px; */
+  margin-right: 50px;
+  
+  margin-left: 663px;
 }
 
 .description {
+  display: flex;
+  margin-top: 106px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  justify-content: space-between;
+  align-items: center
+}
 
+.description-title {
+  word-spacing: 18px;
+  color: #FFF;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .bet-button {
-
+  display: block;
+  color: #FFF;
+  border: 1px solid #FFF;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: transparent;
+  width: 257px;
+  height: 51px;
+  text-align: center;
 }
+
 
 .lots {
   margin: 180px 24px 120px 24px;
 }
 
 .lots-heading {
-
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 40px;
+  margin-bottom: 27px;
 }
 
 .lots-card-list {
-
+  list-style: none;
+  display: flex;
+  gap: 25px;
 }
 
 .lots-card-list-item {
+  width: 334px;
+  min-height: 596px;
 
 }
 
 .card-link {
-
+  height: 100%;
+  display: block;
+  text-decoration: none;
 }
 
 .card {
-
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 40px;
+  
 }
 
 .card-type-film {
@@ -135,45 +208,100 @@
 }
 
 .card-title {
-
+  color: #FFF;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: 1px;
+  line-height: 1.2;
 }
 
 .card-text {
-
+  color: #FFF;
+  font-size: 20px;
+  line-height: 1.2;  
 }
 
 .lots-look-more-link {
-
+  display: block;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: 40px;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-thickness: 1px;
 }
 
 .about {
   margin-left: 24px;
   margin-right: 24px;
   margin-bottom: 180px;
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  column-gap: 25px;
+}
+
+.about-logo {
+  background-color: black;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+.about-logo-image {
+  display: block;
+  width: 148px;
+  height: 114px;
 }
 
 .about-title {
-
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 136px;
+  margin-bottom: 100px;
+  
 }
 
 .about-text {
-
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 20px;
+  line-height: 24px;
 }
+
+
 
 .about-column {
 
 }
 
 footer {
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 50px;
+  min-height: 180px;
+  align-items: start;
 }
 
 .footer-menu {
-
+  justify-self: center;
 }
 
 .footer-menu-list {
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
 }
 
 .footer-menu-list-item {
@@ -181,15 +309,21 @@ footer {
 }
 
 .footer-menu-link {
-
+  font-size: 18px;
+  text-underline-position: under;
+  display: block;
 }
 
 .footer-menu-link-active {
-
+  text-decoration: none;
 }
 
 .footer-social-list {
-
+  display: flex;
+  list-style: none;
+  justify-self: end;
+  gap: 48px;
+  list-style: none;
 }
 
 .footer-social-list-item {
@@ -197,7 +331,9 @@ footer {
 }
 
 .footer-social-link {
-
+  display: block;
+  width: 48px;
+  height: 48px;
 }
 
 .footer-social-icon {
